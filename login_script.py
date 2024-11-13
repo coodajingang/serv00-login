@@ -108,16 +108,16 @@ async def send_telegram_message(message):
     payload = {
         'chat_id': TELEGRAM_CHAT_ID,
         'text': message,
-        'reply_markup': {
-            'inline_keyboard': [
-                [
-                    {
-                        'text': '问题反馈❓',
-                        'url': 'https://t.me/yxjsjl'
-                    }
-                ]
-            ]
-        }
+        # 'reply_markup': {
+        #     'inline_keyboard': [
+        #         [
+        #             {
+        #                 'text': '问题反馈❓',
+        #                 'url': 'https://t.me/yxjsjl'
+        #             }
+        #         ]
+        #     ]
+        # }
     }
     headers = {
         'Content-Type': 'application/json'
